@@ -1,0 +1,30 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>plugin.spring</groupId>
+  <artifactId>plugin.spring</artifactId>
+  <version>0.0.1-SNAPSHOT</version>
+  <dependencies>
+  		<dependency>
+			<groupId>com.github.tja414312570</groupId>
+			<artifactId>plugin.core</artifactId>
+			<version>0.0.1</version>
+		</dependency>
+		<dependency>
+			<groupId>com.github.tja414312570</groupId>
+			<artifactId>plugin.utils.ext</artifactId>
+			<version>0.0.1</version>
+		</dependency>
+		<!-- https://mvnrepository.com/artifact/org.springframework/spring-core -->
+		<dependency>
+		    <groupId>org.springframework</groupId>
+		    <artifactId>spring-core</artifactId>
+		    <version>5.3.4</version>
+		</dependency>
+		<!-- https://mvnrepository.com/artifact/org.springframework/spring-context -->
+		<dependency>
+		    <groupId>org.springframework</groupId>
+		    <artifactId>spring-context</artifactId>
+		    <version>5.3.5</version>
+		</dependency>
+  </dependencies>
+</project>
