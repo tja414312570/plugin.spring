@@ -12,6 +12,8 @@ public class TestSpringResource {
 		PlugsFactory.getInstance().addScanPath(TestSpringResource.class);
 		PlugsFactory.getInstance().addResource(resource);
 		PlugsFactory.init();
+		
+		
 		SpringBeans springBeans = PlugsFactory.getPluginsInstance("testSpringBeans");
 		System.out.println(springBeans);
 		System.out.println("----");

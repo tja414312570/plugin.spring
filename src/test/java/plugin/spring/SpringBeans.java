@@ -3,19 +3,23 @@ package plugin.spring;
 import javax.annotation.PostConstruct;
 import javax.annotation.PreDestroy;
 
+import org.slf4j.Logger;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 @Service("testSpringBeans")
 public class SpringBeans {
+	@Autowired
+	private Logger logger;
 	public SpringBeans() {
 		System.out.println("实例化");
 	}
 	@PostConstruct
 	public void init() {
-		System.out.println("实例化后执行了我"+this);
+		logger.debug("实例化后执行了我"+this);
 	}
 	@PreDestroy
 	public void destory() {
-		System.out.println("实例销毁");
+		logger.debug("实例销毁");
 	}
 }
