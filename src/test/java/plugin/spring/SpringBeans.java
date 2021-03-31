@@ -9,7 +9,7 @@ import org.springframework.stereotype.Service;
 
 @Service("testSpringBeans")
 public class SpringBeans {
-	@Autowired
+	@Autowired(required = false)
 	private Logger logger;
 	public SpringBeans() {
 		System.out.println("实例化");
